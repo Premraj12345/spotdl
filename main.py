@@ -7,9 +7,9 @@ input = st.text_input("Paste the Link here")
 if os.path.exists("files") == False:
   os.mkdir("files")
 
-if input == True:
+if input:
   start = st.button("Start Extracting the Audio files")
-  if start == True:
+  if start:
     downloading = os.system(f"spotdl {input}")
     for filename in os.listdir():
       os.system(f"cp {filename} files")
