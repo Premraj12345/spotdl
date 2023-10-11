@@ -2,7 +2,6 @@ import streamlit as st
 import os
 
 st.header("Spotify Playlist Downloader")
-st.subheader("Experience the seamless downloading")
 input = st.text_input("Paste the Link here")
 os.mkdir("files")
 
