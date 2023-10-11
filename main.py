@@ -3,7 +3,9 @@ import os
 
 st.header("Spotify Playlist Downloader")
 input = st.text_input("Paste the Link here")
-os.mkdir("files")
+
+if !os.path("files"):
+  os.mkdir("files")
 
 if input == True:
   start = st.button("Start Extracting the Audio files")
