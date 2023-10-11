@@ -15,4 +15,5 @@ if input:
       os.system(f"cp {filename} files")
     os.system("zip -r hosanna_songs.zip files")
     start = False
-  st.download_button("Download Now","hosanna_songs.zip")
+  if !start:
+    st.download_button("Download Now","hosanna_songs.zip")
