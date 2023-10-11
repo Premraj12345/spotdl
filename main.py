@@ -4,7 +4,7 @@ import os
 st.header("Spotify Playlist Downloader")
 input = st.text_input("Paste the Link here")
 
-if os.exists("files") == False:
+if os.path.exists("files") == False:
   os.mkdir("files")
 
 if input == True:
